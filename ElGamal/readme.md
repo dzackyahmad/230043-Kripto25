@@ -35,10 +35,10 @@ Program ini adalah implementasi **ElGamal Cipher** dalam bahasa Python dengan du
 ## Alur Program
 1. Program menampilkan menu utama:
 
-===== PROGRAM ELGAMAL (Latihan Z_p) =====
-Enkripsi
-Dekripsi
-Keluar
+===== PROGRAM ELGAMAL (Latihan Z_p) =====\n
+Enkripsi\n
+Dekripsi\n
+Keluar\n
 2. User memilih menu (1, 2, atau 3).  
 3. Jika memilih **Enkripsi**, user memasukkan parameter `p`, `g`, `x`, `k`, dan `plaintext`. Program akan menampilkan nilai `y`, `c1`, `s`, serta daftar `c2`.  
 4. Jika memilih **Dekripsi**, user memasukkan parameter `p`, `x`, `c1`, template teks (untuk kapitalisasi & non-huruf), serta daftar `c2`. Program akan menampilkan hasil plaintext.  
