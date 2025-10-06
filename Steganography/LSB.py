@@ -38,9 +38,6 @@ def bits32_to_int(bits: List[int]) -> int:
         raise ValueError("Header bukan 32 bit.")             # Raise error jika tidak
     return int.from_bytes(bits_to_bytes(bits), "big")        # Konversi bit ke int
 
-# -----------------------------
-# Utilitas gambar & kapasitas
-# -----------------------------
 
 def load_image_rgb(path: str) -> Image.Image:
     """Muat gambar & pastikan mode RGB (lossless disarankan)."""
@@ -72,9 +69,6 @@ def unflatten_rgb(flat: List[int], size: Tuple[int, int]) -> Image.Image:
     img.putdata(pixels)                        # Set data piksel ke gambar
     return img                                 # Kembalikan objek Image
 
-# -----------------------------
-# Inti: LSB Encode / Decode
-# -----------------------------
 
 def encode_message_to_image(cover_path: str, out_path: str, message: str) -> int:
     """Sisipkan 'message' ke dalam cover & simpan PNG; return jumlah byte."""
